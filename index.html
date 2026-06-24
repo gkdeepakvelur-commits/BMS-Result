@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Result Portal</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to the School Result Portal</h1>
+    </header>
+    <main>
+        <section class="login-box">
+            <h2 style="text-align: center; margin-bottom: 10px;">Student Login</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">Enter your details to view your results.</p>
+            <form action="result.html" method="GET" id="loginForm">
+                <div class="form-group">
+                    <label for="rollNumber">Roll Number / Registration Number</label>
+                    <input type="text" id="rollNumber" name="rollNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <button type="submit">Proceed to Check Result</button>
+            </form>
+            <p style="text-align: center; margin-top: 20px; font-size: 14px;">
+                <a href="#">Forgot Roll Number?</a> | <a href="admin-login.html">Admin Login</a>
+            </p>
+        </section>
+    </main>
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Result - School Result Portal</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h1 {
+            text-align: center;
+            color: #0066cc;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>School Result Portal</h1>
+        <div class="form-group">
+            <label for="rollNo">Enter Roll Number</label>
+            <input type="text" id="rollNo" placeholder="e.g., 101">
+        </div>
+        <button onclick="showResult()">Check Result</button>
+        <div id="result"></div>
+        <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+            <a href="index.html">← Back to Login</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
